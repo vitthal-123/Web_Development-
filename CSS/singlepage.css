@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;  /*for going to another section in menu*/
+}
+.box{
+    width: 80%;
+    min-height: 50px;
+    border: 2px solid black;
+    margin: auto;
+}
+nav{
+    width: 80%;
+    min-height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+   
+}
+nav ul{
+    width: 100%;
+}
+nav ul li{
+  list-style: none;
+  /* list-style-type: none; */
+  display: inline-block;/*ekak somar ek menu anle*/
+  padding-top: 15px;
+}
+nav ul li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    /* font-size: 1.1em; */
+    /* font-size: 1.5vw; vmax and vw for used responsive*/ 
+    font-size: 1.9vmax;
+    font-weight: bold; 
+
+}
+#section1{
+    width: 100%;
+    height: 100vh;
+    background-color: royalblue;
+}
+#section1 h2{
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+}
+#section2{
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+}
+#section2 h2{
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+}
+#section3{
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+}
+#section3 h2{
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+}
+#section4{
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+}
+#section4 h2{
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+}
+#section5{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#section5 h2{
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+}
