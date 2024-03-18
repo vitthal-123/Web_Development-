@@ -86,7 +86,7 @@
     
 }
 .text .afooter{
-   line-height: 900px;
+   min-height: 900px;
    text-align: center;
      /* border: 1px solid black; */
 }
