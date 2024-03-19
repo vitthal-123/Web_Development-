@@ -1,0 +1,53 @@
+*{
+    /* padding: 0;
+    margin: 0;
+    box-sizing: border-box; */
+}
+div{
+    width: 100%;
+    display: flex;
+    justify-content:center ;/*work for horizontal desgin*/
+    align-items: center;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px gray;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.bg-1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/bullet2.jpg);
+    
+}
+.bg-1 h2{
+    color:white;
+}
+.bg-2{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/bullet3.jpg);
+}
+.bg-2 h2{
+    color: white;
+}
+.bg-3{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/friends.jpg);
+}
+.bg-3 h2{
+    color: white;
+}
+.bg-4{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/herbal.jpg);
+}
+.bg-4 h2{
+    color: white;
+}
