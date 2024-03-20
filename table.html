@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+                
+        }
+        .box{
+            width: 80%;
+            min-height: 300px;
+            border: 1px solid black;
+            margin: auto;
+        }
+        table,th,tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 500px;
+            margin: 80px;
+            
+        }
+        tr,td{
+            text-align: center;
+        }
+        th{
+            padding: 5px;
+            background-color: red;
+            color: white;
+        }
+        tr:hover{
+            background-color: orange;
+        }
+        /* tr:nth-child(even)
+        {
+            background-color: bisque;
+        }
+        tr:nth-child(odd)
+        {
+            background-color: darkred;
+        } */
+        .empname{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <center>
+        <table>
+            <h2>Employee Data</h2>
+            <tr>
+                <th>Emp_Id</th>
+                <th>Emp_Name</th>
+                <th>Emp_Mob</th>
+                <th>Emp_salary</th>
+                <th>Emp_Address</th>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td class="empname">Vitthal Ghangal</td>
+               <td>34567890</td>
+               <td>50000</td>
+               <td>Dahigaon</td> 
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="empname">gopal Ghangal</td>
+                <td>34567890</td>
+                <td>60000</td>
+                <td>Akola</td> 
+             </tr>
+             <tr>
+                <td>3</td>
+                <td class="empname">Gauri Ghangal</td>
+                <td>34677890</td>
+                <td>70000</td>
+                <td>Nagpur</td> 
+             </tr>
+             <tr>
+                <td>4</td>
+                <td class="empname">Sharada Ghangal</td>
+                <td>34987654</td>
+                <td>90000</td>
+                <td>Amaravati</td> 
+             </tr>
+             <tr>
+                <td>5</td>
+                <td class="empname">Darshana Ghangal</td>
+                <td>34567890</td>
+                <td>560000</td>
+                <td>Pune</td> 
+             </tr>
+        </table>
+    </center>
+
+    </div>
+</body>
+</html>
