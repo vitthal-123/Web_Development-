@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ism/css/my-slider.css">
+    <script src="ism/js/ism-2.2.min.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Playfair Display", serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            width: 60%;
+            min-height: 100px;
+            border: 2px solid black;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 60px;
+            background-color: royalblue;
+            margin-bottom: 10px;
+        }
+        .logo h2{
+            color: white;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 1.7em;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 60px;
+            background-color: goldenrod;
+            margin-bottom: 10px;
+           
+        }
+        .menu ul{
+            width: 100%;
+            display: flex;
+           justify-content: space-around;
+           align-items: center;
+           gap: 10px;
+        }
+        .menu ul li{
+            list-style-type: none;
+           
+        }
+        .menu ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.3em;
+        }
+        .slider{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 200px;
+            background-color: aquamarine;
+            margin-bottom: 10px;
+        }
+        .main-body{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 300px;
+            border: 1px solid black;
+            /* background-color: blueviolet; */
+            margin-top: 10px;
+            justify-content: space-around;
+        }
+        .main-body .sidebar{
+          display: flex;
+          flex-direction: row;
+          flex-basis: 20%;
+          background-color: orange;
+          justify-content: center;
+          align-items: center;
+        }
+        .main-body .content{
+            display: flex;
+          flex-direction: row;
+          flex-basis: 75%;
+          background-color: orangered;
+          justify-content: center;
+          align-items: center;
+        }
+        .footer{
+            width: 100%;
+            min-height: 50px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: royalblue;
+        }
+        @media only screen and (max-width:768px)
+        {
+            .box{
+                width: 100%;
+            }
+            .menu{
+                flex-direction: column;
+            }
+            .menu ul{
+                flex-direction: column;
+            }
+            .menu ul li a:hover{
+                background-color: yellow;
+            }
+            .main-body{
+                flex-direction: column;
+            }
+            .sidebar{
+                min-height: 200px;
+                margin-top: 10px;
+            }
+            .content{
+                min-height: 300px;
+                margin-top: 10px;
+            }
+            .footer h4{
+                font-size: 2.9vw;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+<div class="logo">
+    <h2>Company Name</h2>
+</div>
+<div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contacts</a></li>
+       
+    </ul>
+</div>
+<div class="slider">
+    <div class="ism-slider" id="my-slider">
+        <ol>
+          <li>
+            <img src="ism/image/slides/flower-729514_1280.jpg">
+            <div class="ism-caption ism-caption-0">My slide caption text</div>
+          </li>
+          <li>
+            <img src="ism/image/slides/beautiful-701678_1280.jpg">
+            <div class="ism-caption ism-caption-0">My slide caption text</div>
+          </li>
+          <li>
+            <img src="ism/image/slides/summer-192179_1280.jpg">
+            <div class="ism-caption ism-caption-0">My slide caption text</div>
+          </li>
+        </ol>
+      </div>
+</div>
+
+<div class="main-body">
+    <div class="sidebar">
+   sidebar
+    </div>
+    <div class="content">
+   content
+    </div>
+</div>
+<div class="footer">
+    <h4>This website maintain by Vitthal Ghangal @copy:2024</h4>
+</div>
+    </div>
+</body>
+</html>
