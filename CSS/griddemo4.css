@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 60%;
+    min-height: 100px;
+    border: 1px solid black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 60px 400px 200px 300px 60px;
+    grid-template-areas: "header header header header header"
+                           "slider box1 box2 box3 box4"
+                           "slider box5 box5 box5 box4"
+                           "slider con1 con2 con3 box4"
+                            "footer footer footer footer footer";
+}
+.header{
+    background-color: blue;
+    color: white;
+    grid-area: header;
+}
+.slider{
+    background-color: aquamarine;
+    color: white;
+    grid-area: slider;
+}
+.box1{
+    background-color: blueviolet;
+    color: white;
+    grid-area: box1;
+}
+.box2{
+    background-color: tomato;
+    color: white;
+    grid-area: box2;
+}
+.box3{
+    background-color: aqua;
+    color: white;
+    grid-area: box3;
+}
+.box4{
+    background-color: red;
+    color: white;
+    grid-area: box4;
+}
+.box5{
+    background-color: goldenrod;
+    color: white;
+    grid-area: box5;
+}
+.con1{
+    background-color: darkcyan;
+    color: white;
+    grid-area: con1;
+}
+.con2{
+    background-color: firebrick;
+    color: white;
+    grid-area: con2;
+}
+.con3{
+    background-color: green;
+    color: white;
+    grid-area: con3;
+}
+.footer{
+    background-color: blue;
+    color: white;
+    grid-area: footer;
+}

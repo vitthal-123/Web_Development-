@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    min-height: 100px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto auto 70px;
+}
+.header{
+    background-color: blueviolet;
+    display: flex;
+   
+    
+}
+.header .logo{
+    width: 100%;
+    padding: 9px;
+   
+}
+.logo h2{
+    color: white;
+    margin-left: 10px;
+}
+.header .menu{
+    width: 100%;
+    
+}
+.menu ul{
+    padding: 5px;
+    display: flex;
+   
+   
+}
+.menu ul li{
+    list-style-type: none;
+    margin: 15px;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.slider{
+    background-color: yellow;
+}
+.content{
+    background-color: aquamarine;
+}
+.footer{
+    background-color: blueviolet;
+}

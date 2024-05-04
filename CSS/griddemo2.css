@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 80%;
+    min-height: 100px;
+    border: 1px solid black;
+    margin: auto;
+    display: grid;
+    /* grid-template-columns: 100px 200px 300px; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,100px);
+    /* grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+    grid-gap: 10px 10px;
+    grid-auto-rows: 100px;
+    
+}
+.b1{
+    background-color: aqua;
+    color: white;
+    /* grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;  shortcut for this above steps is given below*/
+    /* grid-row: 2/3;
+    grid-column: 3/4; */
+
+    /* grid-area: 2/3/3/4; */
+    /* grid-area: 2/3/3/4; row start column s row end col end*/
+    /* grid-column: 1/-1; */
+    grid-column: 1/span 3;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.b1 .logo h1{
+    padding: 10px;
+    color: black;
+
+}
+.b1 .menu ul li a{
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+.b1 .menu{
+    padding-top: 20px;
+}
+.b1 .menu ul{
+    display: flex;
+    list-style-type: none;
+    
+    
+}
+
+.b2{
+  background-color: blue;
+  color: white;
+}
+.b3{
+   background-color: aquamarine;
+   color: white;
+}
+.b4{
+    background-color: red;
+    color: white;
+
+}
+.b5{
+  background-color: crimson;
+  color: white;
+}
+.b6{
+    background-color: brown;
+    color: white;
+    /* grid-area: 1/1/2/2; */
+}

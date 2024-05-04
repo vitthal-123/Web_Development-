@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .wrapper{
+        border: 1px solid black;
+        margin: auto;
+        width: 80%;
+        min-height: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 300px 400px 70px;
+    }
+    .header{
+        background-color: blueviolet;
+        display: flex;
+      
+    }
+    .header h2{
+        color: brown;
+    }
+    .logo{
+        width: 100%;
+    }
+    .menu{
+     width: 100%;
+     
+    }
+    .menu ul{
+        list-style-type: none;
+        display: flex;
+        padding: 10px;
+       
+    }
+     .menu ul a{
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        
+    }
+    .slider{
+        background-color: aquamarine;
+    }
+    .content{
+        background-color: aliceblue;
+    }
+    .footer{
+        background-color: blueviolet;
+    }
+    
+   </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+           <div class="logo">
+            <h2>Company Name</h2>
+           </div>
+           <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+           </div>
+        </div>
+        <div class="slider">
+
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+</html>

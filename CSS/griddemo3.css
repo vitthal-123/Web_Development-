@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 80%;
+    min-height: 100px;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px 300px auto 60px;
+    grid-gap:10px 10px;
+    grid-template-areas: "header header header header"
+                         "slider box1 box2 box3"
+                         "slider container container container"
+                         "footer footer footer footer";
+}
+.header{
+    background-color: blueviolet;
+    color: white;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.header .logo{
+    width: 100%;
+    
+}
+.logo h2{
+    padding: 10px;
+    color: white;
+}
+.header .menu{
+    width: 100%;
+   padding: 10px;
+
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.slider{
+    background-color: tomato;
+    color: white;
+    grid-area: slider;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+.box1{
+    /* background-color: aqua; */
+    color: white;
+    grid-area: box1;
+}
+.box1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.box2{
+    /* background-color: yellowgreen; */
+    color: white;
+    grid-area: box2;
+    
+}
+.box2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.box3{
+    /* background-color: olivedrab; */
+    color: white;
+    grid-area: box3;
+}
+.box3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.container{
+    background-color: goldenrod;
+    color: white;
+    grid-area: container;
+}
+.container p{
+    text-align: justify;
+}
+.footer{
+    background-color: blueviolet;
+    color: white;
+    grid-area: footer;
+    
+}
+.footer h2{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}

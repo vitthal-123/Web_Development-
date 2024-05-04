@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    border: 1px solid black;
+    margin: auto;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+}
+.header .logo{
+  display: flex;
+  flex-basis: 40%;
+  background-color: navy;
+}
+.logo h2{
+    color: white;
+    padding: 15px;
+}
+.header .menu{
+    display: flex;
+  flex-basis: 55%;
+  background-color: navy;
+  padding-top: 6px;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style-type: none;
+    padding: 10px;
+    
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+.slider{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    height: 450px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 1px solid red;
+}
+.cards .imgs{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to right,#bc4e9c,#f80759);
+    border-radius: 30px;
+}
+
+.imgs img{
+  width: 60%;
+  height: 60%;
+  margin-top: 30px;
+  margin-left: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+.social{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: orange;
+    margin-top: 70px;
+    border-radius: 15px;
+}
