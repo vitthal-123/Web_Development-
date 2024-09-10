@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Common styles for both screen and print */
+        h1 {
+            text-align: center;
+        }
+
+        /* Styles specific to screen */
+        @media screen {
+            h1 {
+                background-color: yellow;
+                color: white;
+            }
+            aside {
+                width: 400px;
+                height: 200px;
+                text-align: left;
+                border: 1px solid red;
+            }
+        }
+
+        /* Styles specific to print */
+        @media print {
+            h1 {
+                background-color: green;
+                color: white;
+                text-align: left;
+            }
+            aside {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        ads...
+    </aside>
+    <h1>Vitthal</h1>
+    <h1>Mauli</h1>
+    <h1>Pandharpur</h1>
+</body>
+</html>

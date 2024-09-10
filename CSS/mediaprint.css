@@ -1,0 +1,10 @@
+/* h1{
+    color: orange;
+}
+p{
+    background-color: yellow;
+} */
+h1 {
+    background-color: snow;
+    color: orange; /* Setting color to white for better visibility on dark background */
+}
